@@ -1,0 +1,17 @@
+/*specifying a tag */
+body{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    /*vh = viewport height which means how much of the viewport we want to use*/
+    height: 100vh;
+}
+
+/*specifying an id */
+#main-container{
+    border: 5px solid black;
+    width: 1000%;
+    height : 800px;
+    background-color : salmon;
+}

@@ -15,3 +15,99 @@ body{
     height : 800px;
     background-color : salmon;
 }
+
+#header{
+    height: 130px;
+    border: 5px solid black;
+    text-align: center;
+/* declare the animation for the header */
+    animation-name: textcolorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+#nav-bar{
+    height: 50px;
+    text-align: center;
+   /*Defining the border for the nav-bar*/
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    padding: 25px;
+    padding-top: 50px;
+}
+
+/*specifying a class */
+.nav-btn{
+    border:5px dotted seagreen;
+    padding:10px;
+}
+.nav-btn:link{
+    font-size: 20px;
+}
+.nav-btn:visited{
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+.nav-btn:hover{
+    background-color: seagreen;
+    color: white;
+    border: 5px dotted white;
+    font-family : "Bitcount Grid Double";
+}
+#content{
+    height: 520px;
+    width: 650px;
+/* 
+    animation-name: percentageAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    
+    animation-direction: alternate;
+
+    text-align: center;
+    margin: auto;
+    font-family: "Bitcount Grid Double";
+    border: 5px double violet;
+}
+/*Key fram title*/
+@keyframes textcolorchange {
+    from{color: green}
+    to {color: red}
+}
+
+@keyframes percentageAnimation {
+    0%{
+        font-size: 1px;
+        background-color: black;
+        border: 1px dotted black;
+    }
+    15%{
+        font-size: 20px;
+        background-color: white;
+        border: 2px dotted rgb(184, 19, 19);
+    }
+    20%{
+        font-size: 25px;
+        background-color: rgb(9, 179, 51);
+        border: 0px dotted rgb(128, 12, 12);
+    }
+    50%{
+        font-size: 25px;
+        background-color: rgb(219, 169, 30);
+        border: 10px dotted rgb(18, 100, 223);
+    }
+    75%{
+        font-size: 20px;
+        background-color: rgb(230, 26, 152);
+        border: 11px dotted rgb(1, 211, 18);
+    }
+    100%{
+        font-size: 1px;
+        background-color: black;
+        border: 1px dotted black;
+    }
+
+}

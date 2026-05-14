@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // For Loop
+        for (let i = 0; i < 10 ; i++) {
+            console.log(i);
+        }
+        //Second for loop 
+        var amountToLoop = 25
+        for(let i = 0; i < amountToLoop; i+=2) {
+            console.log(i);
+        }
+
+        var person = {
+            first: "Joel",
+            last: "Smith",
+        }
+
+        console.log(person.first);  
+        console.log(person.last);
+        //Changing the vaule of the object
+        person.first = "Jeremiah!"
+        console.log(person.first);
+
+        var car = {
+            wheels: 26,
+            doors: 8,
+            make: "subuwu",
+            hasEninge: false,
+            windows:1,
+            drive : function() {
+                console.log("Vroom Vroom!");
+
+            }
+        }
+//Calling a funtion that is inside a object
+        
+       // Changing the make 
+        car.make = "Hondoor"
+        console.log(car.make);
+    </script>
+</body>
+</html>

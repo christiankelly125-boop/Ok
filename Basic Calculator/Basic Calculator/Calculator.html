@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Christian G.">
+    <title>Week 6 | Javascript</title>
+</head>
+<body>
+    <script>
+        // Example of number variable
+        var taco = 10
+// Example of string variable
+        var favoriteFood = "Pizza"
+// This is to show you that variable names can be as long as you want
+        var hiThisIsALongName = "This is a long name"
+// Example of boolean variable
+        var charlesGetsHundredPresent = false
+//Output string
+        console.log("Hello")
+//Output a varible number
+        console.log(25)
+//Outputting a variable string
+        console.log(hiThisIsALongName)
+        //Conditional Operators
+        // Greater than
+        // Less than
+        // Less than or equal to
+        // Greater than or equal to
+        // == same value
+        // != no equal 
+        // === same value and type 
+        // !==not same
+
+        var x = 19
+        var y = 20
+
+        if (x > y)
+    {
+        console.log("x is greater than y")
+    }
+    else if (x < y)
+    {
+        console.log("x is less than y")
+    }
+
+    var a = 1
+    var b = 2
+    var c = 3
+    var d = 4
+
+    //An example of using logical operatiors
+    if (a < b && c < d)
+    {
+        console.log("A is less than B and C is less than D")
+    }
+    else
+    {
+        console.log("Can't show that A is less than B and C is less than D")
+    }
+
+    var numOne = 20
+    var numTwo = 6
+
+    numOne = numOne + numTwo
+    console.log(numOne)
+    
+    numOne += numTwo
+    console.log(numOne)
+
+    numOne += numTwo
+    console.log(numOne)
+
+    numOne *= numTwo
+    console.log(numOne)
+    //Defining a function
+    function riceBalls() {
+        console.log("I like rice balls")
+    }
+    riceBalls()
+
+    function add (paramOne, paramTwo) {
+        console.log(paramOne + paramTwo)
+    }
+    add(1, 2)
+
+    var rice = 256
+    var miller = 1
+
+    add(rice, miller)
+    function pizzaCookie(a,b,c) {
+    return a * b * c 
+}
+
+var cookie = pizzaCookie(1, 2, 3)
+console.log(cookie)
+// Alert is a pop up
+// The value between the () can be anything
+alert("This is an alert")
+alert("This is another alert")
+//prompts the user for imput
+// A prompt will give you a string back
+var name = prompt("Please enter your name:")
+console.log(name)
+
+function addNumbers(a, b) {
+    return a + b;
+}
+
+function subtractNumbers(a, b) {
+    return a - b;
+}
+
+function multiplyNumbers(a, b) {
+    return a * b;
+}
+
+function divideNumbers(a, b) {
+    return a / b;
+}
+
+var operator = prompt("Enter an operator: add, subtract, multiply, or divide");
+var num1 = Number(prompt("Enter the first number:"));
+var num2 = Number(prompt("Enter the second number:"));
+var result;
+
+if (operator === "add") {
+    result = addNumbers(num1, num2);
+} else if (operator === "subtract") {
+    result = subtractNumbers(num1, num2);
+} else if (operator === "multiply") {
+    result = multiplyNumbers(num1, num2);
+} else if (operator === "divide") {
+    result = divideNumbers(num1, num2);
+} else {
+    result = "Unknown operator. Please use add, subtract, multiply, or divide.";
+}
+
+alert("Result: " + result);
+    </script>
+
+
+</body>
+</html>
